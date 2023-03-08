@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio">
+    <meta name="keywords" content="Portfolio, Gabriel Silva, Gabriel ARS, Developer, Programmer, Araçatuba, Brazil">
+    <meta name="author" content="Gabriel Augusto Ribeiro da Silva">
+    
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/freelancer.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $("header").addClass('black');
+            } 
+            else{
+                $('header').removeClass('black');
+            }
+        })
+    </script>
+
+
+    <title>Gabriel ARS | Portfolio</title>
+</head>
+<body>
+    <!-- <header>
+        <div class="container">
+            
+            <nav>
+                <ul class="nav_menu">
+                    <li class="active"><a href="#hero" class="navigation f-p">Home</a></li>
+                    <li><a href="#about" class="navigation f-p">About & Skills</a></li>
+                    <li><a href="#portfolio" class="navigation f-p">Portfolio</a></li>
+                    <li><a href="#contact" class="navigation f-p">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <p >
+                    Gabriel ARS
+                </p>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#hero" class="nav-link navigation f-p">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link navigation f-p">About & Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link navigation f-p">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link navigation f-p">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/images/menu-hamburger-svgrepo-com.svg"  alt="" width="50px" height="50px"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#hero" class="nav-link navigation f-p">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link navigation f-p">About & Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link navigation f-p">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link navigation f-p">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="content">
+                <div class="content_box">
+                    <p class="subtitle_hero f-p">Welcome</p>
+                    <p class="title_hero f-p">I'm Web Developer</p>
+                    <p class="paragraph_hero ">I'm full stack developer and web designer</p>
+
+                    <div class="buttons_hero">
+                        <a href="#" class="button_hero btn-d ">
+                            <button class="btn-unit-d ">View Work</button>
+                        </a>
+                        <a href="#" class="button_hero btn-d">
+                            <button class="btn-unit-d ">Hire Me</button>
+                        </a>
+                        <a href="https://github.com/Gabriel-AR-Silva" target="_blank" class="github_button_hero"><img src="assets/images/bi_github.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture_hero">
+                <img src="assets/images/my_image.png" alt="my personal image">
+            </div>
+            <div class="scrooldown_line_hero">
+                <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.png" alt="whatsapp's icon" class="icon_hero"></a>
+
+                <a href="#" target="_blank"><img src="assets/images/icon-facebook.png" alt="facebook's icon" class="icon_hero"></a>
+
+                <a href="#" target="_blank"><img src="assets/images/icon-linkedin.png" alt="linkedin's icon" class="icon_hero"></a>
+
+                <a href="#" target="_blank"><img src="assets/images/icon-gmail.png" alt="gmail's icon " class="icon_hero"></a>
+
+                <img src="assets/images/Scrool.png" alt="scroll's image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <input type="checkbox" id="chk">
+        <div class="nocturn_mode">
+            <label for="chk">
+                <div class="light_mode"></div>
+                <div class="dark_mode"></div>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <div class="container">
+            <div class="title_box">
+                <p class="mega_title ">About me</p>
+                <p class="small_title ">About me</p>
+            </div>
+
+            <div class="about_content">
+                <div class="about_me">
+                    <p class="about_subtitle ">Me</p>
+                    <p class="paragraph_about_me ">
+                        This year I started studying web development, focused exclusively on front-end, but over time I became interested in the whole process. From the creation of the prototype with Figma, to the final details with the back-end. I’m from Brazil, i am 19 years old. I take a systems development course at ETEC - Araçatuba. I am freelancer to work at the moment.
+                    </p>
+                    <div class="languages_about_me">
+                        <p>Languages:</p>
+                        <div class="language">
+                            <div class="portuguese_language">
+                                <p class="name_language">Portuguese</p>
+                                <p class="level_language">Native</p>
+                            </div>
+                            <div class="english_language">
+                                <p class="name_language">English</p>
+                                <p class="level_language">Basic (A2)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_skills">
+                    <p class="about_subtitle ">My skills</p>
+                    
+                    <div class="knowledges_about">
+                        <div class="figma_skill knowledge"></div>
+                        <div class="html_skill knowledge"></div>
+                        <div class="css_skill knowledge"></div>
+                        <div class="js_skill knowledge"></div>
+                        <div class="php_skill knowledge"></div>
+                        <div class="mysql_skill knowledge"></div>
+                        <div class="vscode_skill knowledge"></div>
+                        <div class="git_skill knowledge"></div>
+                        <div class="ps_skill knowledge"></div>
+                    </div>
+
+                    <div class="skill_observation">
+                        <div class="content">
+                            <p>
+                                Figma is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="freelancer" style="background-image: url(assets/images/freelancer-image.png)">
+        <div class="container">
+            <div class="freelancer_content">
+                <p class="freelancer_title ">I Am Available For Freelancer</p>
+                <a href="#" class="button_freelancer btn-d"><button class="btn-unit-d ">Hire Me</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="title_box">
+                <p class="mega_title ">Portfolio</p>
+                <p class="small_title ">Portfolio</p>
+            </div>
+            <p class="paragraph_subtitle ">
+                Below are my relevant projects. Choose a category and/or click on <br> an image for a larger view.
+            </p>
+
+            <div class="demonstration">
+                <div class="navbar">
+                    <a href="#" class="button_portfolio primary_port"><button >All</button></a>
+                    <a href="#" class="button_portfolio"><button >Design</button></a>
+                    <a href="#" class="button_portfolio"><button >Development</button></a>
+                    <a href="#" class="button_portfolio"><button >Photoshop</button></a>
+                </div>
+
+                <div class="dividing_line"></div>
+
+                <div class="projects">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="title_box">
+                <p class="mega_title ">Contact</p>
+                <p class="small_title ">Contact</p>
+            </div>
+            <p class="paragraph_subtitle ">
+                Contact me for more information. I will answer you around <br> 7 am to 11 pm in Brasilia time (capital of Brazil)
+            </p>
+
+            <div class="contact_content">
+                <div class="direct_informations">
+                    <div class="contact_informations">
+                        <div class="city ctt_information">
+                            <div class="ctt_location_logo"></div>
+
+                            <div class="ctt_info">
+                                <address id="address_text" >Araçatuba, Brazil</address>
+                                <button onclick="copyToClipboardAddress()">Copy</button>
+                            </div>
+
+                        </div>
+                        <div class="email  ctt_information">
+                            <div class="ctt_email_logo"></div>
+
+                            <div class="ctt_info">
+                                <p id="email_text" >gabrielsilva.webdeveloper@gmail.com</p>
+                                <button onclick="copyToClipboardEmail()">Copy</button>
+                            </div>
+
+                        </div>
+                        <div class="phone_number ctt_information">
+                            <div class="ctt_phone_number_logo"></div>
+
+                            <div class="ctt_info">
+                                <p id="phone_number_text" >+55 (18) 99658-2823</p>
+                                <button onclick="copyToClipboardPhoneNumber()">Copy</button>
+                            </div>
+                             
+                        </div>
+                        <div class="copied">
+                            Copied
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                              </svg>
+                        </div>
+                    </div>
+
+                    <div class="dividing_line"></div>
+
+                    <div class="redirect_socia_media">
+                        <a href="" class="whatsapp_direct"></a>
+                        <a href="" class="facebook_direct"></a>
+                        <a href="" class="linkedin_direct"></a>
+                        <a href="" class="gmail_direct"></a>
+                    </div>
+                </div>
+
+                <div class="contact_form">
+                    <form action="contato.php" method="post">
+                        <input type="text" name="name" id="name_form" placeholder="Your name"  required>
+                        <input type="email" name="email" id="email_form" placeholder="Your email"  required>
+                        <textarea name="description" id="description_form" cols="30" rows="10"  placeholder="Typing your message..."></textarea>
+                        <input type="submit" name="submit" id="submit_form" value="Submit" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="logo f-p">
+                <p>
+                    Gabriel ARS
+                </p>
+            </div>
+            <p >Developed by Gabriel Silva</p>
+            <p >@2022 All Right Reserved</p>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="assets/javascript/svg/knowledges_svg.js"></script>
+    <script type="text/javascript" src="assets/javascript/svg/ctt_informations_svg.js"></script>
+    <script type="text/javascript" src="assets/javascript/svg/socialMedia_ctt_svg.js"></script>
+    <script type="text/javascript" src="assets/javascript/svg/screen_mode_svg.js"></script>
+    <script type="text/javascript" src="assets/javascript/copyToClipboard.js"></script>
+    <script type="text/javascript" src="assets/javascript/scroll.js"></script>
+    <script src="assets/javascript/responsive_menu.js"></script>
+    
+</body>
+</html>

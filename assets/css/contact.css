@@ -1,0 +1,175 @@
+@import url("root.css");
+    
+/* FREELANCER */
+
+.contact{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.contact .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact_content{
+    margin-top: 105px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap;
+    gap: 30px; */
+}
+
+.direct_informations{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.contact_informations{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ctt_information, .ctt_info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+}
+
+.ctt_information svg{
+    color: var(--default_color);
+}
+
+.ctt_info button{
+    color: var(--default_color);
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.copied{
+    position: fixed;
+    background-color: var(--default_color);
+    color: white;
+    border-radius: 20px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s all;
+}
+
+.copied .bi-check-circle-fill{
+    color: rgb(3, 187, 3);
+}
+
+.copied_show{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.redirect_socia_media{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 15px;
+}
+
+.redirect_socia_media a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.redirect_socia_media svg{
+    color: var(--default_color);
+    transition: .5s all;
+}
+
+.redirect_socia_media .whatsapp_direct svg:hover{
+    color: rgb(2, 190, 2);
+}
+
+.redirect_socia_media .facebook_direct svg:hover{
+    color: rgb(64, 30, 214);
+}
+
+.redirect_socia_media .linkedin_direct svg:hover{
+    color: rgb(40, 115, 255);
+}
+
+.redirect_socia_media .gmail_direct svg:hover{
+    color: rgb(182, 7, 7);
+}
+
+
+.contact_form{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid violet; */
+}
+
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#name_form, #email_form, #description_form{
+    outline-style: none;
+    font-size: 15px;
+    padding: 7px;
+    border: 2px solid var(--default_color);
+    border-radius: 2px;
+}
+
+/* #name_form:focus, #email_form:focus, #description_form:focus{
+    
+} */
+
+#submit_form{
+    background-color: var(--default_color);
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin: left;
+    border: none;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+#submit_form:hover{
+    border-radius: 8px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .ctt_information{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .contact_content{
+        margin-top: 105px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,118 @@
+    
+    @import url("root.css");
+
+        /* HERO */
+
+        .hero{
+            color: var(--secondary_color);
+            width: 100%;
+            height: 684px;
+            padding-top: 60px;
+            /* border: 1px solid rgb(168, 5, 5); */ 
+            overflow: hidden;
+        }
+        
+        .content{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .subtitle_hero{
+            font-size: 39px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .title_hero{
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .paragraph_hero{
+            font-size: 15px;
+            margin-bottom: 45px;
+        }
+        
+        .buttons_hero{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .button_hero{
+            width: 129.62px;
+            height: 43.9px;
+            border: 2px solid var(--default_color);
+        }
+        
+        .button_hero button{
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .github_button_hero{
+            position: relative;
+        }
+
+        .github_button_hero::after{
+            content: '';
+            width: 45px;
+            height: 45px;
+            border: 0px dotted var(--default_color);
+            border-radius: 30px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            transition: .2s all ease-in-out;
+        }
+
+        .github_button_hero:hover::after{
+            width: 50px;
+            height: 50px;
+            border: 3px dotted var(--default_color);
+            /* animation: rotation_border 10s infinite linear; */
+        }
+
+        /* @keyframes rotation_border {
+            100%{
+                transform: rotateZ(300deg);
+            }
+        } */
+
+        .picture_hero{
+            position: relative;
+            margin-top: 66px;
+            display: flex;
+            align-content: flex-end;
+            /* border: 1px solid green;  */
+        }
+        
+        .scrooldown_line_hero{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 0;
+            padding-right: 5px;
+            margin-top: 70px;
+        }
+        
+        .icon_hero{
+            width: 27px;
+        }
+
+        .icon_hero:hover{
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1074px) {
+            .picture_hero{
+                height: 500px;
+                width: 400px;
+                margin-top: 184px;
+            }
+        } 
+       
