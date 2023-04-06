@@ -15,18 +15,13 @@
         max-height: auto;
     }
 
-    #chk{
-        opacity: 1;
-        position: absolute;
-    }
-
     .about .nocturn_mode{
         position: absolute;
         right: 4%;
         top: 2%;
     }
 
-    .about label{
+    .about #screenMode{
         width: 90px;
         height: 40px;
         padding: 0px 10px;
@@ -37,6 +32,7 @@
         align-items: center;
         position: relative;
         cursor: pointer;
+        user-select: none;
     }
 
     .bi-brightness-high-fill{
@@ -52,18 +48,19 @@
         width: 34px;
         height: 34px;
         border-radius: 17px;
-        transform: translateX(40px);
+        transform: translateX(0);
         position: absolute;
         transition: .5s all ease-in-out;
     }
 
-    .about .ball:hover{
-        transform: translateX(0);
-    }
-
-    /* #chk:checked ~ .ball {
+    /* .about .ball:hover{
         transform: translateX(40px);
     } */
+
+    .about .darkMode {
+        transform: translateX(40px);
+        position: absolute;
+    }
 
     .about_content{
         margin-top: 40px;
@@ -135,9 +132,7 @@
         cursor: pointer;
     }
 
-    .knowledge:first-child{
-        background-color: rgb(94, 3, 185);
-    }
+    
 
     .skill_observation{
         width: 100%;
@@ -150,4 +145,8 @@
         background-color: rgb(255, 255, 255);
         border-left: 3px solid rgb(94, 3, 185);
         padding: 15px;
+    
+    }
+    .SkillActive{
+        background-color: rgb(94, 3, 185);
     }

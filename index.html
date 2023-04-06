@@ -20,39 +20,15 @@
     <link rel="stylesheet" href="assets/css/footer.css">
 
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <script type="text/javascript">
-        $(window).on("scroll", function(){
-            if($(window).scrollTop()){
-                $("header").addClass('black');
-            } 
-            else{
-                $('header').removeClass('black');
-            }
-        })
-    </script>
-
 
     <title>Gabriel ARS | Portfolio</title>
 </head>
 <body>
-    <!-- <header>
-        <div class="container">
-            
-            <nav>
-                <ul class="nav_menu">
-                    <li class="active"><a href="#hero" class="navigation f-p">Home</a></li>
-                    <li><a href="#about" class="navigation f-p">About & Skills</a></li>
-                    <li><a href="#portfolio" class="navigation f-p">Portfolio</a></li>
-                    <li><a href="#contact" class="navigation f-p">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
 
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <p >
+                <p>
                     Gabriel ARS
                 </p>
             </div>
@@ -118,13 +94,12 @@
 
 
     <section class="about" id="about">
-        <input type="checkbox" id="chk">
         <div class="nocturn_mode">
-            <label for="chk">
+            <div id="screenMode">
                 <div class="light_mode"></div>
                 <div class="dark_mode"></div>
                 <div class="ball"></div>
-            </label>
+            </div>
         </div>
 
         <div class="container">
@@ -157,7 +132,7 @@
                     <p class="about_subtitle ">My skills</p>
                     
                     <div class="knowledges_about">
-                        <div class="figma_skill knowledge"></div>
+                        <div class="figma_skill knowledge SkillActive"></div>
                         <div class="html_skill knowledge"></div>
                         <div class="css_skill knowledge"></div>
                         <div class="js_skill knowledge"></div>
@@ -169,7 +144,7 @@
                     </div>
 
                     <div class="skill_observation">
-                        <div class="content">
+                        <div class="content figma">
                             <p>
                                 Figma is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
                             </p>
@@ -203,21 +178,35 @@
 
             <div class="demonstration">
                 <div class="navbar">
-                    <a href="#" class="button_portfolio primary_port"><button >All</button></a>
-                    <a href="#" class="button_portfolio"><button >Design</button></a>
-                    <a href="#" class="button_portfolio"><button >Development</button></a>
-                    <a href="#" class="button_portfolio"><button >Photoshop</button></a>
+                    <button  class="button_portfolio checkPortBTN all"> All </button>
+                    <button class="button_portfolio design"> Design </button> 
+                    <button class="button_portfolio web"> Web Development </button>
+                    <button  class="button_portfolio photoshop"> Photoshop </button>               
                 </div>
 
                 <div class="dividing_line"></div>
 
                 <div class="projects">
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
-                    <div class="project"></div>
+                    <div class="project photoshopProj">
+                        <img src="https://th.bing.com/th/id/OIP.5LDi4DUf6LCvb4NhSn-fYAHaEK?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
+                        <div class="hoverProject"></div>
+                    </div>
+                    <div class="project webProj">
+                        <img src="https://th.bing.com/th/id/OIP.ZwfLscEy3GC824NgSIBjhQHaFV?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
+                        <div class="hoverProject"></div>
+                    </div>
+                    <div class="project webProj">
+                        <img src="https://th.bing.com/th/id/OIP.j0TYCC2FhGCIzmzC2ukCPAHaFJ?w=234&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
+                        <div class="hoverProject"></div>
+                    </div>
+                    <div class="project webProj">
+                        <img src="https://th.bing.com/th/id/OIP.WP-GlmqmmnJ53sho7MQd6AHaFP?w=280&h=198&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
+                        <div class="hoverProject"></div>
+                    </div>
+                    <div class="project designProj">
+                        <img src="https://th.bing.com/th/id/OIP.eBQ-7Pb8gAcjy7YbM4VwuQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
+                        <div class="hoverProject"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -275,10 +264,10 @@
                     <div class="dividing_line"></div>
 
                     <div class="redirect_socia_media">
-                        <a href="" class="whatsapp_direct"></a>
+                        <a href="https://criarmeulink.com.br/u/1680819484" target="_blank" class="whatsapp_direct"></a>
                         <a href="" class="facebook_direct"></a>
                         <a href="" class="linkedin_direct"></a>
-                        <a href="" class="gmail_direct"></a>
+                        <a href="" target="_blank" class="gmail_direct"></a>
                     </div>
                 </div>
 
@@ -286,7 +275,7 @@
                     <form action="contato.php" method="post">
                         <input type="text" name="name" id="name_form" placeholder="Your name"  required>
                         <input type="email" name="email" id="email_form" placeholder="Your email"  required>
-                        <textarea name="description" id="description_form" cols="30" rows="10"  placeholder="Typing your message..."></textarea>
+                        <textarea name="description" id="description_form" cols="30" rows="10"  placeholder="Typing your message..." required></textarea>
                         <input type="submit" name="submit" id="submit_form" value="Submit" >
                     </form>
                 </div>
@@ -315,6 +304,49 @@
     <script type="text/javascript" src="assets/javascript/copyToClipboard.js"></script>
     <script type="text/javascript" src="assets/javascript/scroll.js"></script>
     <script src="assets/javascript/responsive_menu.js"></script>
+
+    <script>
+
+        $(".button_portfolio").on("click", function(){
+            $(".button_portfolio").removeClass('checkPortBTN')
+            $(event.target).toggleClass('checkPortBTN');
+            if($(event.target).hasClass("all"))
+            {
+                $(".webProj").css("display", "block");
+                $(".designProj").css("display", "block");
+                $(".photoshopProj").css("display", "block");
+            }
+            if($(event.target).hasClass("web"))
+            {
+                $(".photoshopProj").css("display", "none");
+                $(".designProj").css("display", "none");
+                $(".webProj").css("display", "block");
+            }
+            if($(event.target).hasClass("design"))
+            {
+                $(".webProj").css("display", "none");
+                $(".photoshopProj").css("display", "none");
+                $(".designProj").css("display", "block");
+            }
+            if($(event.target).hasClass("photoshop"))
+            {
+                $(".webProj").css("display", "none");
+                $(".designProj").css("display", "none");
+                $(".photoshopProj").css("display", "block");
+            }
+        })
+
+        
+        $(".knowledge").on("click", function(){
+            $(".knowledge").removeClass('SkillActive')
+            $(event.target).toggleClass('SkillActive');
+        })
+
+        $("#screenMode").on("click", function(){
+            $(".ball").toggleClass('darkMode');
+        })
+           
+    </script>
     
 </body>
 </html>

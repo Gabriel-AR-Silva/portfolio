@@ -28,22 +28,15 @@
     align-items: center;
     justify-content: center;
     padding: 12px 32px ;
-}
-
-.button_portfolio button{
     background-color: transparent;
     color: black;
-    border: none;
     font-size: 15px;
     cursor: pointer;
     font-weight: 500;
 }
 
-.primary_port{
+.checkPortBTN{
     background-color: var(--default_color);
-}
-
-.primary_port button{
     color: white;
 }
 
@@ -64,8 +57,30 @@
 }
 
 .project{
-    background-color: gainsboro;
     width: 335px;
     height: 250px;
+    position: relative;
+}
+
+
+.hoverProject{
+    background-color: var(--default_color);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.hoverProject:hover{
+    opacity: .5;
+}
+
+.project img{
     border-radius: 5px;
 }

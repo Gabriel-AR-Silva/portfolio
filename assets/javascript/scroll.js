@@ -14,3 +14,12 @@ function scrollToIdOnClick(event){
         behavior: 'smooth',
     });
 };
+
+$(window).on("scroll", function(){
+    if($(window).scrollTop()){
+        $("header").addClass('black');
+    } 
+    else{
+        $('header').removeClass('black');
+    }
+})
