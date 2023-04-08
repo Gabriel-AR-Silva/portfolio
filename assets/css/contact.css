@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .contact_content{
@@ -85,6 +86,7 @@
 .redirect_socia_media{
     height: 60px;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content:center;
     gap: 15px;
@@ -173,3 +175,30 @@
         gap: 30px;
     }
 }
+
+@media (max-width: 560px) {
+    .container{
+        padding: 0 15px; 
+    }
+    .ctt_information{
+        margin: 10px 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .ctt_info{
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .ctt_info p, .ctt_info address{
+        font-size: 18px;
+    }
+ 
+} 
+
+@media (max-width: 460px) {
+    .redirect_socia_media{
+        width: 300px;
+        margin: 0 auto;
+    }
+} 

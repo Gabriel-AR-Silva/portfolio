@@ -29,3 +29,26 @@ footer .logo{
 footer .logo p{
     color: var(--default_color);
 }
+
+.paragraph_subtitle{
+    padding: 0 10px;
+    width: 100%;
+}
+
+.freelancer_title{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 700px) {
+    .demonstration .navbar{
+        flex-wrap: wrap;
+    }
+    .demonstration .navbar button{
+        padding: 12px 32px ;
+       
+    }
+} 
+

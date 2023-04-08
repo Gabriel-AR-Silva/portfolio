@@ -33,6 +33,7 @@
     font-size: 15px;
     cursor: pointer;
     font-weight: 500;
+    max-height: 47px;
 }
 
 .checkPortBTN{
