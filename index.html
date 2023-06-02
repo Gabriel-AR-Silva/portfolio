@@ -9,7 +9,7 @@
     <meta name="author" content="Gabriel Augusto Ribeiro da Silva">
     
     
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/hero.css">
@@ -79,13 +79,13 @@
                 <img src="assets/images/my_image.png" alt="my personal image">
             </div>
             <div class="scrooldown_line_hero">
-                <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.png" alt="whatsapp's icon" class="icon_hero"></a>
+                <a href="#" target="_blank"><img src="assets/images/icon-whatsapp.png" alt="whatsapp's icon" class="icon_hero" title="whatsapp"></a>
 
-                <a href="#" target="_blank"><img src="assets/images/icon-facebook.png" alt="facebook's icon" class="icon_hero"></a>
+                <a href="#" target="_blank"><img src="assets/images/icon-facebook.png" alt="facebook's icon" class="icon_hero" title="facebook"></a>
 
-                <a href="#" target="_blank"><img src="assets/images/icon-linkedin.png" alt="linkedin's icon" class="icon_hero"></a>
+                <a href="#" target="_blank"><img src="assets/images/icon-linkedin.png" alt="linkedin's icon" class="icon_hero" title="linkedin"></a>
 
-                <a href="#" target="_blank"><img src="assets/images/icon-gmail.png" alt="gmail's icon " class="icon_hero"></a>
+                <a href="#" target="_blank"><img src="assets/images/icon-gmail.png" alt="gmail's icon " class="icon_hero" title="gmail"></a>
 
                 <img src="assets/images/Scrool.png" alt="scroll's image">
             </div>
@@ -143,13 +143,70 @@
                         <div class="ps_skill knowledge"></div>
                     </div>
 
-                    <div class="skill_observation">
+                    <div class="skill_observation figmaSkillActive">
                         <div class="content figma">
                             <p>
                                 Figma is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
                             </p>
                         </div>
                     </div>
+                    <div class="skill_observation htmlSkillActive">
+                        <div class="content html">
+                            <p>
+                                Html is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation cssSkillActive">
+                        <div class="content css">
+                            <p>
+                                CSS is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation jsSkillActive">
+                        <div class="content js">
+                            <p>
+                                JavaScript is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation phpSkillActive">
+                        <div class="content php">
+                            <p>
+                                PHP is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation mysqlSkillActive">
+                        <div class="content mysql">
+                            <p>
+                                MySQL is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation vscodeSkillActive">
+                        <div class="content vscode">
+                            <p>
+                                Visual Studio Code is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation gitSkillActive">
+                        <div class="content git">
+                            <p>
+                                Git is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill_observation photoshopSkillActive">
+                        <div class="content photoshop">
+                            <p>
+                                Photoshop is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -181,16 +238,12 @@
                     <button  class="button_portfolio checkPortBTN all"> All </button>
                     <button class="button_portfolio design"> Design </button> 
                     <button class="button_portfolio web"> Web Development </button>
-                    <button  class="button_portfolio photoshop"> Photoshop </button>               
+                    <button  class="button_portfolio photoshop" disabled> Photoshop </button>               
                 </div>
 
                 <div class="dividing_line"></div>
 
                 <div class="projects">
-                    <div class="project photoshopProj">
-                        <img src="https://th.bing.com/th/id/OIP.5LDi4DUf6LCvb4NhSn-fYAHaEK?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
-                        <div class="hoverProject"></div>
-                    </div>
                     <div class="project webProj">
                         <img src="https://th.bing.com/th/id/OIP.ZwfLscEy3GC824NgSIBjhQHaFV?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
                         <div class="hoverProject"></div>
@@ -336,15 +389,68 @@
             }
         })
 
+        $(".skill_observation").css("display", "none");
+        $(".figmaSkillActive").css("display", "block");
         
         $(".knowledge").on("click", function(){
             $(".knowledge").removeClass('SkillActive')
             $(event.target).toggleClass('SkillActive');
+
+            if($(event.target).hasClass("figma_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".figmaSkillActive").css("display", "block");
+            } 
+
+            if($(event.target).hasClass("html_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".htmlSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("css_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".cssSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("js_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".jsSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("php_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".phpSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("mysql_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".mysqlSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("vscode_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".vscodeSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("git_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".gitSkillActive").css("display", "block");
+            } 
+            if($(event.target).hasClass("ps_skill"))
+            {
+                $(".skill_observation").css("display", "none");
+                $(".photoshopSkillActive").css("display", "block");
+            } 
         })
 
         $("#screenMode").on("click", function(){
             $(".ball").toggleClass('darkMode');
         })
+
+        window.onbeforeunload = function () {
+            setTimeout(() => alert("olá") , 2000)
+        }; 
            
     </script>
     

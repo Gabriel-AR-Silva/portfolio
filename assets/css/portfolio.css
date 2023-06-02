@@ -36,6 +36,11 @@
     max-height: 47px;
 }
 
+button.photoshop{
+    border-color: rgb(141, 141, 141);
+    color: rgb(141, 141, 141);
+}
+
 .checkPortBTN{
     background-color: var(--default_color);
     color: white;
