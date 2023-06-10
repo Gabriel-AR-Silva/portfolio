@@ -132,17 +132,44 @@
                     <p class="about_subtitle ">My skills</p>
                     
                     <div class="knowledges_about">
-                        <div class="figma_skill knowledge SkillActive"></div>
-                        <div class="html_skill knowledge"></div>
-                        <div class="css_skill knowledge"></div>
-                        <div class="js_skill knowledge"></div>
-                        <div class="php_skill knowledge"></div>
-                        <div class="mysql_skill knowledge"></div>
-                        <div class="vscode_skill knowledge"></div>
-                        <div class="git_skill knowledge"></div>
-                        <div class="ps_skill knowledge"></div>
-                    </div>
-
+                        <div class="figma_skill knowledge SkillActive" 
+                             data-skill-class="figma_skill" 
+                             data-observation-class="figmaSkillActive">
+                        </div>
+                        <div class="html_skill knowledge" 
+                             data-skill-class="html_skill" 
+                             data-observation-class="htmlSkillActive">
+                        </div>
+                        <div class="css_skill knowledge" 
+                             data-skill-class="css_skill" 
+                             data-observation-class="cssSkillActive">
+                        </div>
+                        <div class="js_skill knowledge" 
+                             data-skill-class="js_skill" 
+                             data-observation-class="jsSkillActive">
+                        </div>
+                        <div class="php_skill knowledge" 
+                             data-skill-class="php_skill" 
+                             data-observation-class="phpSkillActive">
+                        </div>
+                        <div class="mysql_skill knowledge" 
+                             data-skill-class="mysql_skill" 
+                             data-observation-class="mysqlSkillActive">
+                        </div>
+                        <div class="vscode_skill knowledge" 
+                             data-skill-class="vscode_skill" 
+                             data-observation-class="vscodeSkillActive">
+                        </div>
+                        <div class="git_skill knowledge" 
+                             data-skill-class="git_skill" 
+                             data-observation-class="gitSkillActive">
+                        </div>
+                        <div class="ps_skill knowledge" 
+                             data-skill-class="ps_skill" 
+                             data-observation-class="photoshopSkillActive">
+                        </div>
+                      </div>
+                      
                     <div class="skill_observation figmaSkillActive">
                         <div class="content figma">
                             <p>
@@ -235,28 +262,29 @@
 
             <div class="demonstration">
                 <div class="navbar">
-                    <button  class="button_portfolio checkPortBTN all"> All </button>
-                    <button class="button_portfolio design"> Design </button> 
-                    <button class="button_portfolio web"> Web Development </button>
-                    <button  class="button_portfolio photoshop" disabled> Photoshop </button>               
-                </div>
+                    <button class="button_portfolio checkPortBTN all" data-type="all">All</button>
+                    <button class="button_portfolio design" data-type="design">Design</button> 
+                    <button class="button_portfolio web" data-type="web">Web Development</button>
+                    <button class="button_portfolio photoshop" data-type="photoshop" disabled>Photoshop</button>               
+                  </div>
+                  
 
                 <div class="dividing_line"></div>
 
                 <div class="projects">
-                    <div class="project webProj">
+                    <div class="project webProj allProj">
                         <img src="https://th.bing.com/th/id/OIP.ZwfLscEy3GC824NgSIBjhQHaFV?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
                         <div class="hoverProject"></div>
                     </div>
-                    <div class="project webProj">
+                    <div class="project webProj allProj">
                         <img src="https://th.bing.com/th/id/OIP.j0TYCC2FhGCIzmzC2ukCPAHaFJ?w=234&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
                         <div class="hoverProject"></div>
                     </div>
-                    <div class="project webProj">
+                    <div class="project webProj allProj">
                         <img src="https://th.bing.com/th/id/OIP.WP-GlmqmmnJ53sho7MQd6AHaFP?w=280&h=198&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
                         <div class="hoverProject"></div>
                     </div>
-                    <div class="project designProj">
+                    <div class="project designProj allProj">
                         <img src="https://th.bing.com/th/id/OIP.eBQ-7Pb8gAcjy7YbM4VwuQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7" alt="" width="100%" height="100%">
                         <div class="hoverProject"></div>
                     </div>
@@ -360,99 +388,48 @@
 
     <script>
 
-        $(".button_portfolio").on("click", function(){
-            $(".button_portfolio").removeClass('checkPortBTN')
-            $(event.target).toggleClass('checkPortBTN');
-            if($(event.target).hasClass("all"))
-            {
-                $(".webProj").css("display", "block");
-                $(".designProj").css("display", "block");
-                $(".photoshopProj").css("display", "block");
-            }
-            if($(event.target).hasClass("web"))
-            {
-                $(".photoshopProj").css("display", "none");
-                $(".designProj").css("display", "none");
-                $(".webProj").css("display", "block");
-            }
-            if($(event.target).hasClass("design"))
-            {
-                $(".webProj").css("display", "none");
-                $(".photoshopProj").css("display", "none");
-                $(".designProj").css("display", "block");
-            }
-            if($(event.target).hasClass("photoshop"))
-            {
-                $(".webProj").css("display", "none");
-                $(".designProj").css("display", "none");
-                $(".photoshopProj").css("display", "block");
-            }
-        })
+        $(document).ready(function() {
+            
+            $(".button_portfolio").on("click", function() {
+                
+                $(".button_portfolio").removeClass('checkPortBTN');
+                $(this).addClass('checkPortBTN');
+                let type = $(this).data("type");
 
-        $(".skill_observation").css("display", "none");
-        $(".figmaSkillActive").css("display", "block");
-        
-        $(".knowledge").on("click", function(){
-            $(".knowledge").removeClass('SkillActive')
-            $(event.target).toggleClass('SkillActive');
+                if (type === "all") {
+                $(".allProj").css("display", "block");
 
-            if($(event.target).hasClass("figma_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".figmaSkillActive").css("display", "block");
-            } 
+                } else {
+                $(".allProj").css("display", "none");
+                $(`.${type}Proj`).css("display", "block");
 
-            if($(event.target).hasClass("html_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".htmlSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("css_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".cssSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("js_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".jsSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("php_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".phpSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("mysql_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".mysqlSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("vscode_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".vscodeSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("git_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".gitSkillActive").css("display", "block");
-            } 
-            if($(event.target).hasClass("ps_skill"))
-            {
-                $(".skill_observation").css("display", "none");
-                $(".photoshopSkillActive").css("display", "block");
-            } 
-        })
+                }
+            });
 
-        $("#screenMode").on("click", function(){
-            $(".ball").toggleClass('darkMode');
-        })
 
-        window.onbeforeunload = function () {
-            setTimeout(() => alert("olá") , 2000)
-        }; 
+            // --------------------------
+
+            $(".skill_observation").css("display", "none");
+            $(".figmaSkillActive").css("display", "block");
+
+            $(".knowledge").on("click", function() {
+                $(".knowledge").removeClass('SkillActive');
+                $(event.target).toggleClass('SkillActive');
+
+                var skillClass = $(event.target).data('skill-class');
+                var observationClass = $(event.target).data('observation-class');
+
+                $(".skill_observation").css("display", "none");
+                $("." + observationClass).css("display", "block");
+            });
+
+            // --------------------------
+
+            $("#screenMode").on("click", function(){
+                $(".ball").toggleClass('darkMode');
+            })
+        });
            
     </script>
-    
 </body>
 </html>
