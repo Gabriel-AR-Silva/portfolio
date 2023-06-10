@@ -133,107 +133,45 @@
                     
                     <div class="knowledges_about">
                         <div class="figma_skill knowledge SkillActive" 
-                             data-skill-class="figma_skill" 
+                             data-skill-class="figma" 
                              data-observation-class="figmaSkillActive">
                         </div>
                         <div class="html_skill knowledge" 
-                             data-skill-class="html_skill" 
+                             data-skill-class="html" 
                              data-observation-class="htmlSkillActive">
                         </div>
                         <div class="css_skill knowledge" 
-                             data-skill-class="css_skill" 
+                             data-skill-class="css" 
                              data-observation-class="cssSkillActive">
                         </div>
                         <div class="js_skill knowledge" 
-                             data-skill-class="js_skill" 
+                             data-skill-class="javascript" 
                              data-observation-class="jsSkillActive">
                         </div>
                         <div class="php_skill knowledge" 
-                             data-skill-class="php_skill" 
+                             data-skill-class="php" 
                              data-observation-class="phpSkillActive">
                         </div>
                         <div class="mysql_skill knowledge" 
-                             data-skill-class="mysql_skill" 
+                             data-skill-class="mysql" 
                              data-observation-class="mysqlSkillActive">
                         </div>
                         <div class="vscode_skill knowledge" 
-                             data-skill-class="vscode_skill" 
+                             data-skill-class="vscode" 
                              data-observation-class="vscodeSkillActive">
                         </div>
                         <div class="git_skill knowledge" 
-                             data-skill-class="git_skill" 
+                             data-skill-class="git" 
                              data-observation-class="gitSkillActive">
                         </div>
                         <div class="ps_skill knowledge" 
-                             data-skill-class="ps_skill" 
+                             data-skill-class="photoshop" 
                              data-observation-class="photoshopSkillActive">
                         </div>
                       </div>
                       
-                    <div class="skill_observation figmaSkillActive">
-                        <div class="content figma">
-                            <p>
-                                Figma is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation htmlSkillActive">
-                        <div class="content html">
-                            <p>
-                                Html is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation cssSkillActive">
-                        <div class="content css">
-                            <p>
-                                CSS is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation jsSkillActive">
-                        <div class="content js">
-                            <p>
-                                JavaScript is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation phpSkillActive">
-                        <div class="content php">
-                            <p>
-                                PHP is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation mysqlSkillActive">
-                        <div class="content mysql">
-                            <p>
-                                MySQL is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation vscodeSkillActive">
-                        <div class="content vscode">
-                            <p>
-                                Visual Studio Code is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation gitSkillActive">
-                        <div class="content git">
-                            <p>
-                                Git is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill_observation photoshopSkillActive">
-                        <div class="content photoshop">
-                            <p>
-                                Photoshop is a vector graphics and protoyping editor for design projects. I have knowledge of fundamental resources for web design and animations utility variant interations.
-                            </p>
-                        </div>
-                    </div>
-
+                      <div id="aboutMySkill"></div>
+    
                 </div>
             </div>
         </div>
@@ -385,13 +323,14 @@
     <script type="text/javascript" src="assets/javascript/copyToClipboard.js"></script>
     <script type="text/javascript" src="assets/javascript/scroll.js"></script>
     <script src="assets/javascript/responsive_menu.js"></script>
+    <script src="assets/javascript/renderSkills.js"></script>
 
     <script>
 
         $(document).ready(function() {
             
             $(".button_portfolio").on("click", function() {
-                
+                S
                 $(".button_portfolio").removeClass('checkPortBTN');
                 $(this).addClass('checkPortBTN');
                 let type = $(this).data("type");
@@ -409,21 +348,6 @@
 
             // --------------------------
 
-            $(".skill_observation").css("display", "none");
-            $(".figmaSkillActive").css("display", "block");
-
-            $(".knowledge").on("click", function() {
-                $(".knowledge").removeClass('SkillActive');
-                $(event.target).toggleClass('SkillActive');
-
-                var skillClass = $(event.target).data('skill-class');
-                var observationClass = $(event.target).data('observation-class');
-
-                $(".skill_observation").css("display", "none");
-                $("." + observationClass).css("display", "block");
-            });
-
-            // --------------------------
 
             $("#screenMode").on("click", function(){
                 $(".ball").toggleClass('darkMode');
