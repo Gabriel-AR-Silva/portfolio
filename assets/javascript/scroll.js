@@ -1,25 +1,20 @@
-let menuItems = document.querySelectorAll('.navigation');
+$('.navigation').on('click', scrollToIdOnClick);
 
-menuItems.forEach(item =>{
-    item.addEventListener('click', scrollToIdOnClick);
+function scrollToIdOnClick(event) {
+  event.preventDefault();
+  const element = $(event.target);
+  const id = element.attr('href');
+  const to = $(id).offset().top;
+
+  $('html, body').animate({
+    scrollTop: to - 80
+  }, 'smooth');
+}
+
+$(window).scroll(function() {
+  if ($(window).scrollTop()) {
+    $('header').addClass('black');
+  } else {
+    $('header').removeClass('black');
+  }
 });
-function scrollToIdOnClick(event){
-    event.preventDefault();
-    const element = event.target;
-    const id = element.getAttribute('href');
-    const to = document.querySelector(id).offsetTop;
-
-    window.scroll({
-        top: to - 80,
-        behavior: 'smooth',
-    });
-};
-
-$(window).on("scroll", function(){
-    if($(window).scrollTop()){
-        $("header").addClass('black');
-    } 
-    else{
-        $('header').removeClass('black');
-    }
-})

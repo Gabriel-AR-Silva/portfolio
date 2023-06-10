@@ -1,10 +1,14 @@
 function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/images/menu-hamburger-svgrepo-com.svg";
+    let menuMobile = $('.mobile-menu');
+    let icon = $('.icon');
+  
+    if (menuMobile.hasClass('open')) {
+        menuMobile.removeClass('open');
+        icon.attr('src', 'assets/images/menu-hamburger-svgrepo-com.svg');
+
     } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/images/close-x-svgrepo-com.svg";
+        menuMobile.addClass('open');
+        icon.attr('src', 'assets/images/close-x-svgrepo-com.svg');
     }
-}
+  }
+  
