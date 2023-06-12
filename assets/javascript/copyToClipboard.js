@@ -1,30 +1,27 @@
-let copied_div = document.querySelector(".copied");
+let copiedDiv = $(".copied");
 
-
-let address_copy = document.querySelector("#address_text")
+let addressCopy = $("#address_text");
 function copyToClipboardAddress(){
-    navigator.clipboard.writeText(address_copy.textContent).then(() => {
-        copied()
-    })
+    navigator.clipboard.writeText(addressCopy.text()).then(() => {
+        copied();
+    });
 }
 
-let email_copy = document.querySelector("#email_text")
+let emailCopy = $("#email_text");
 function copyToClipboardEmail(){
-    navigator.clipboard.writeText(email_copy.textContent).then(() => {
-        copied()
-    })
+    navigator.clipboard.writeText(emailCopy.text()).then(() => {
+        copied();
+    });
 }
 
-let phone_number_copy = document.querySelector("#phone_number_text")
+let phoneNumberCopy = $("#phone_number_text");
 function copyToClipboardPhoneNumber(){
-    navigator.clipboard.writeText(phone_number_copy.textContent).then(() => {
-        copied()
-    })
+    navigator.clipboard.writeText(phoneNumberCopy.text()).then(() => {
+        copied();
+    });
 }
 
 function copied(){
-    copied_div.classList.add('copied_show');
-        setTimeout(function(){
-            copied_div.classList.remove('copied_show');
-        },2000)
+    copiedDiv.addClass('copied_show');
+    setTimeout(() => copiedDiv.removeClass('copied_show'), 2000);
 }

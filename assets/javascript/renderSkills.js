@@ -46,7 +46,7 @@ $(document).ready(function() {
         contentElement.append(descriptionElement);
         skillElement.append(contentElement);
         $('#aboutMySkill').html(skillElement);
-        console.log("funcao ativada");
+
     }
     
     // Renderizar a primeira skill ao carregar a página

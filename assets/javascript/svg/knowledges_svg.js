@@ -1,12 +1,12 @@
-const figma_div = document.querySelector(".figma_skill");
-const html_div = document.querySelector(".html_skill");
-const css_div = document.querySelector(".css_skill");
-const js_div = document.querySelector(".js_skill");
-const php_div = document.querySelector(".php_skill");
-const mysql_div = document.querySelector(".mysql_skill");
-const vscode_div = document.querySelector(".vscode_skill");
-const git_div = document.querySelector(".git_skill");
-const ps_div = document.querySelector(".ps_skill");
+const figma_div = $(".figma_skill");
+const html_div = $(".html_skill");
+const css_div = $(".css_skill");
+const js_div = $(".js_skill");
+const php_div = $(".php_skill");
+const mysql_div = $(".mysql_skill");
+const vscode_div = $(".vscode_skill");
+const git_div = $(".git_skill");
+const ps_div = $(".ps_skill");
 
 
 
@@ -30,12 +30,12 @@ let ps_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" vie
 
 
 
-figma_div.innerHTML= figma_svg;
-html_div.innerHTML= html_svg;
-css_div.innerHTML= css_svg;
-js_div.innerHTML= js_svg;
-php_div.innerHTML= php_svg;
-mysql_div.innerHTML= mysql_svg;
-vscode_div.innerHTML= vscode_svg;
-git_div.innerHTML= git_svg;
-ps_div.innerHTML= ps_svg;
+figma_div.html(figma_svg);
+html_div.html(html_svg);
+css_div.html(css_svg);
+js_div.html(js_svg);
+php_div.html(php_svg);
+mysql_div.html(mysql_svg);
+vscode_div.html(vscode_svg);
+git_div.html(git_svg);
+ps_div.html(ps_svg);
