@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio">
-    <meta name="keywords" content="Portfolio, Gabriel Silva, Gabriel ARS, Developer, Programmer, Araçatuba, Brazil">
-    <meta name="author" content="Gabriel Augusto Ribeiro da Silva">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <!-- START - Metatag SEO -->
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Programador junior web full stack com experiência de desenvolvimento em tecnologias como Laravel, VueJS, Inertia e MySQL.">
+    <meta name="keywords" content="Portfolio, Gabriel Silva, Gabriel ARS, Desenvolvedor, Programador">
+    <meta name="author" content="Gabriel Augusto Ribeiro da Silva" />
+    <meta property="og:site_name" content="Gabriel ARS" />
+    <meta property="og:url" content="https://gabriel-ars-portfolio.netlify.app/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="Gabriel ARS | Portfolio" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gabriel-ars-portfolio.netlify.app/" />
+    <meta property="twitter:title" content="Gabriel ARS | Portfolio" />
+    <meta property="twitter:description" content="Programador junior web full stack com experiência de desenvolvimento em tecnologias como Laravel, VueJS, Inertia e MySQL." />
+    <meta property="twitter:image" content="" />
+    <!-- END - Metatag SEO -->
     
     <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/hero.css">
-    <link rel="stylesheet" href="src/css/about.css">
-    <link rel="stylesheet" href="src/css/freelancer.css">
-    <link rel="stylesheet" href="src/css/portfolio.css">
-    <link rel="stylesheet" href="src/css/contact.css">
-    <link rel="stylesheet" href="src/css/footer.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="src/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" async defer></script>
 
     <title>Gabriel ARS | Portfolio</title>
 </head>
 <body>
-
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -55,7 +63,6 @@
         </div>
     </header>
 
-
     <section class="hero" id="hero">
         <div class="container">
             <div class="content">
@@ -76,7 +83,7 @@
                 </div>
             </div>
             <div class="picture_hero">
-                <img src="src/images/my_image.png" alt="my personal image">
+                <img src="src/images/my_image.png" alt="my personal image" loading="lazy">
             </div>
             <div class="scrooldown_line_hero">
                 <a href="#" target="_blank"><img src="src/images/icon-whatsapp.png" alt="whatsapp's icon" class="icon_hero" title="whatsapp"></a>
@@ -87,11 +94,10 @@
 
                 <a href="#" target="_blank"><img src="src/images/icon-gmail.png" alt="gmail's icon " class="icon_hero" title="gmail"></a>
 
-                <img src="src/images/Scrool.png" alt="scroll's image">
+                <img src="src/images/Scrool.png" alt="scroll's image" loading="lazy">
             </div>
         </div>
     </section>
-
 
     <section class="about" id="about">
         <div class="nocturn_mode">
@@ -171,12 +177,10 @@
                       </div>
                       
                       <div id="aboutMySkill"></div>
-    
                 </div>
             </div>
         </div>
     </section>
-
 
     <section class="freelancer" style="background-image: url(src/images/freelancer-image.png)">
         <div class="container">
@@ -186,7 +190,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -205,32 +208,30 @@
                     <button class="button_portfolio web" data-type="web">Web Development</button>
                     <button class="button_portfolio photoshop" data-type="photoshop" disabled>Photoshop</button>               
                 </div>
-                  
 
                 <div class="dividing_line"></div>
 
                 <div class="projects">
                     <div class="project webProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.ZwfLscEy3GC824NgSIBjhQHaFV?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%">
+                        <img src="https://th.bing.com/th/id/OIP.ZwfLscEy3GC824NgSIBjhQHaFV?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%" loading="lazy">
                         <div class="hoverProject"></div>
                     </div>
                     <div class="project webProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.j0TYCC2FhGCIzmzC2ukCPAHaFJ?w=234&h=180&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%">
+                        <img src="https://th.bing.com/th/id/OIP.j0TYCC2FhGCIzmzC2ukCPAHaFJ?w=234&h=180&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%" loading="lazy">
                         <div class="hoverProject"></div>
                     </div>
                     <div class="project webProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.WP-GlmqmmnJ53sho7MQd6AHaFP?w=280&h=198&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%">
+                        <img src="https://th.bing.com/th/id/OIP.WP-GlmqmmnJ53sho7MQd6AHaFP?w=280&h=198&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%" loading="lazy">
                         <div class="hoverProject"></div>
                     </div>
                     <div class="project designProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.eBQ-7Pb8gAcjy7YbM4VwuQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7" alt="design project" width="100%" height="100%">
+                        <img src="https://th.bing.com/th/id/OIP.eBQ-7Pb8gAcjy7YbM4VwuQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7" alt="design project" width="100%" height="100%" loading="lazy">
                         <div class="hoverProject"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <section class="contact" id="contact">
         <div class="container">
@@ -303,7 +304,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="container">
             <div class="logo f-p">
@@ -316,7 +316,6 @@
         </div>
     </footer>
 
-
     <script type="text/javascript" src="src/javascript/svg/knowledges_svg.js"></script>
     <script type="text/javascript" src="src/javascript/svg/ctt_informations_svg.js"></script>
     <script type="text/javascript" src="src/javascript/svg/socialMedia_ctt_svg.js"></script>
@@ -327,7 +326,6 @@
     <script type="text/javascript" src="src/javascript/renderSkills.js"></script>
 
     <script>
-
         $(document).ready(function() {
             
             $(".button_portfolio").on("click", function() {
@@ -349,7 +347,6 @@
                 $(".ball").toggleClass('darkMode');
             })
         });
-           
     </script>
 </body>
 </html>
