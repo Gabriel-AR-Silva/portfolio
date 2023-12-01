@@ -86,6 +86,35 @@ button.photoshop {
 
 .project img {
   border-radius: 5px;
+  object-fit: cover;
+}
+
+.fade-modal {
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.fade-modal .container-modal {
+  background-color: white;
+  margin: auto;
+  position: relative;
+  width: 85%;
+  height: 85%;
+  border-radius: .5rem;
+}
+
+.btn-close-modal{
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 2%;
+  right: 1%;
 }
 
 

@@ -28,11 +28,24 @@
 
     <link rel="stylesheet" href="src/css/main.css">
 
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <script src="https://code.jquery.com/jquery-3.6.3.js" async defer></script>
 
     <title>Gabriel ARS | Portfolio</title>
 </head>
 <body>
+    <div class="fade">
+        <div class="container-modal">
+            <button class="btn-close-modal close-modal">
+                <i class='bx bxs-x-circle bx-sm'></i>
+            </button>
+
+            <p>Link: <span id="link-site-proj"></span></p>
+        </div>
+    </div>
+
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -211,24 +224,7 @@
 
                 <div class="dividing_line"></div>
 
-                <div class="projects">
-                    <div class="project webProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.ZwfLscEy3GC824NgSIBjhQHaFV?w=232&h=180&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%" loading="lazy">
-                        <div class="hoverProject"></div>
-                    </div>
-                    <div class="project webProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.j0TYCC2FhGCIzmzC2ukCPAHaFJ?w=234&h=180&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%" loading="lazy">
-                        <div class="hoverProject"></div>
-                    </div>
-                    <div class="project webProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.WP-GlmqmmnJ53sho7MQd6AHaFP?w=280&h=198&c=7&r=0&o=5&pid=1.7" alt="website project" width="100%" height="100%" loading="lazy">
-                        <div class="hoverProject"></div>
-                    </div>
-                    <div class="project designProj allProj">
-                        <img src="https://th.bing.com/th/id/OIP.eBQ-7Pb8gAcjy7YbM4VwuQHaFj?w=210&h=180&c=7&r=0&o=5&pid=1.7" alt="design project" width="100%" height="100%" loading="lazy">
-                        <div class="hoverProject"></div>
-                    </div>
-                </div>
+                <div class="projects"></div>
             </div>
         </div>
     </section>
@@ -320,6 +316,7 @@
     <script type="text/javascript" src="src/javascript/svg/ctt_informations_svg.js"></script>
     <script type="text/javascript" src="src/javascript/svg/socialMedia_ctt_svg.js"></script>
     <script type="text/javascript" src="src/javascript/svg/screen_mode_svg.js"></script>
+    <script type="text/javascript" src="src/javascript/project.js"></script>
     <script type="text/javascript" src="src/javascript/copyToClipboard.js"></script>
     <script type="text/javascript" src="src/javascript/scroll.js"></script>
     <script type="text/javascript" src="src/javascript/responsiveMenu.js"></script>
@@ -345,6 +342,10 @@
             // Função para alteração do visual da tela do site (Modo escuro e claro)
             $("#screenMode").on("click", function(){
                 $(".ball").toggleClass('darkMode');
+            })
+
+            $(".close-modal").on("click", function(){
+                $(".fade").removeClass('fade-modal');;
             })
         });
     </script>
