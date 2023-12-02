@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
     <!-- START - Metatag SEO -->
+    <meta name="robots" content="index, follow">
     <meta property="og:type" content="website" />
     <meta name="description" content="Programador junior web full stack com experiência de desenvolvimento em tecnologias como Laravel, VueJS, Inertia e MySQL.">
     <meta name="keywords" content="Portfolio, Gabriel Silva, Gabriel ARS, Desenvolvedor, Programador">
@@ -302,9 +303,10 @@
 
                 <div class="contact_form">
                     <form action="contato.php" method="post">
-                        <input type="text" name="name" id="name_form" placeholder="Your name"  required>
-                        <input type="email" name="email" id="email_form" placeholder="Your email"  required>
-                        <textarea name="description" id="description_form" cols="30" rows="10"  placeholder="Typing your message..." required></textarea>
+                        <input type="text" name="name" id="name_form" class="input_ctt" placeholder="Digite seu nome..."  required>
+                        <input type="email" name="email" id="email_form" class="input_ctt" placeholder="Qual o seu email?"  required>
+                        <input type="text" name="subject" id="subject_form" class="input_ctt" placeholder="Digite o assunto..."  required>
+                        <textarea name="description" id="description_form" class="input_ctt" cols="30" rows="10"  placeholder="Me diga mais sobre...  \(*-*)/" required></textarea>
                         <input type="submit" name="submit" id="submit_form" value="Submit" >
                     </form>
                 </div>
