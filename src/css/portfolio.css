@@ -89,8 +89,13 @@ button.photoshop {
   object-fit: cover;
 }
 
+.fade {
+  display: none;
+}
+
 .fade-modal {
   background-color: rgba(0, 0, 0, 0.418);
+  display: block;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -105,6 +110,7 @@ button.photoshop {
   position: relative;
   width: 85%;
   height: 85%;
+  padding: 10px;
   border-radius: .5rem;
 }
 
@@ -113,8 +119,47 @@ button.photoshop {
   background-color: transparent;
   border: 0;
   position: absolute;
-  top: 2%;
-  right: 1%;
+  top: 1%;
+  right: .5%;
 }
+
+.modal-content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-image {
+  width: 65%;
+  height: 100%;
+}
+
+.modal-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.modal-info {
+  height: 100%;
+  width: 35%;
+  padding: 10px 20px;
+}
+
+#titleProj, #descProj {
+  margin-bottom: 2rem;
+}
+
+#descProj {
+  text-align: justify;
+}
+
+#linkProj {
+  color: var(--default_color);
+  text-decoration: underline;
+}
+
 
 

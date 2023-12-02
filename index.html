@@ -42,7 +42,17 @@
                 <i class='bx bxs-x-circle bx-sm'></i>
             </button>
 
-            <p>Link: <span id="link-site-proj"></span></p>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img id="imgProj">
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="titleProj"></h2>
+                    <p id="descProj"></p>
+                    <p>Link: <a target="_blank" id="linkProj"></a></p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -85,10 +95,10 @@
                     <p class="paragraph_hero ">I'm full stack developer and web designer</p>
 
                     <div class="buttons_hero">
-                        <a href="#portfolio" class="button_hero btn-d ">
+                        <a href="#portfolio" class="button_hero btn-d navigation">
                             <button class="btn-unit-d ">View Work</button>
                         </a>
-                        <a href="#contact" class="button_hero btn-d">
+                        <a href="#contact" class="button_hero btn-d navigation">
                             <button class="btn-unit-d ">Hire Me</button>
                         </a>
                         <a href="https://github.com/Gabriel-AR-Silva" target="_blank" class="github_button_hero"><img src="src/images/bi_github.png" alt="Github's my profile button"></a>
@@ -199,7 +209,7 @@
         <div class="container">
             <div class="freelancer_content">
                 <p class="freelancer_title ">I Am Available For Freelancer</p>
-                <a href="#contact" class="button_freelancer btn-d"><button class="btn-unit-d ">Hire Me</button></a>
+                <a href="#contact" class="button_freelancer btn-d navigation"><button class="btn-unit-d ">Hire Me</button></a>
             </div>
         </div>
     </section>
@@ -345,7 +355,7 @@
             })
 
             $(".close-modal").on("click", function(){
-                $(".fade").removeClass('fade-modal');;
+                $(".fade").removeClass('fade-modal');
             })
         });
     </script>

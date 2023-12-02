@@ -2,17 +2,10 @@ $(document).ready(function() {
     const myProjects = [
       {
         title: 'Dr. Moizes Batista',
-        description: 'descrição',
+        description: 'O desenvolvimento do site "Dr. Moizes Batista" envolve a integração de duas poderosas tecnologias, Laravel e Vue.js, para criar uma experiência web dinâmica e eficiente. Laravel, um framework PHP robusto, é utilizado para a construção do backend, gerenciando as operações do servidor, banco de dados e fornecendo uma estrutura organizada para a lógica de negócios.',
         type: 'webProj',
         img_link: 'src/images/projects/drm-site.png',
         site_link: 'https://drmbatista.com.br/',
-      },
-      {
-        title: 'Renata Panegossi Massoterapia',
-        description: 'descrição',
-        type: 'webProj',
-        img_link: '',
-        site_link: '',
       },
     ];
 
@@ -34,7 +27,12 @@ $(document).ready(function() {
 
     const projectData = $(this).data('projectData');
 
-    $("#link-site-proj").text(projectData.site_link)
+    $("#titleProj").text(projectData.title)
+    $("#descProj").text(projectData.description)
+    $("#linkProj").text(projectData.site_link);
+    $("#linkProj").attr("href", projectData.site_link);
+    $("#imgProj").attr("src", projectData.img_link);
+    $("#imgProj").attr("alt", projectData.title);
   });
 });
 
