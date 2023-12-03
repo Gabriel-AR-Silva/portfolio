@@ -11,7 +11,9 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']))
 
     $body = "Nome: $nome \n\r Email: $email \n\r Conteúdo: $description";
 
-    $head = "From: $email \n\r Reply-to: $to \n\r X=Mailer:PHP/" . phpversion();
+    $head = "From: $email\r\n" .
+    "Reply-to: $to\r\n" .
+    "X-Mailer: PHP/" . phpversion();
 
     if(mail($to, $subject, $body, $head)) {
         header("location: ./index.html");

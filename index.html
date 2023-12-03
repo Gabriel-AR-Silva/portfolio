@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
     <!-- START - Metatag SEO -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index">
     <meta property="og:type" content="website" />
     <meta name="description" content="Programador junior web full stack com experiência de desenvolvimento em tecnologias como Laravel, VueJS, Inertia e MySQL.">
     <meta name="keywords" content="Portfolio, Gabriel Silva, Gabriel ARS, Desenvolvedor, Programador">
@@ -23,6 +23,10 @@
     <meta property="twitter:title" content="Gabriel ARS | Portfolio" />
     <meta property="twitter:description" content="Programador junior web full stack com experiência de desenvolvimento em tecnologias como Laravel, VueJS, Inertia e MySQL." />
     <meta property="twitter:image" content="" />
+
+    <!-- Search Console -->
+    <meta name="google-site-verification" content="W0lJMthG1jMJQ4uI2yfeJD1AdgPoz2f5JfkdmLzW5ig" />
+
     <!-- END - Metatag SEO -->
     
     <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
@@ -32,7 +36,7 @@
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.js" async defer></script>
+    <script src="src/jquery/jquery-3.7.1.min.js" async defer></script>
 
     <title>Gabriel ARS | Portfolio</title>
 </head>
@@ -44,9 +48,7 @@
             </button>
 
             <div class="modal-content">
-                <div class="modal-image">
-                    <img id="imgProj">
-                </div>
+                <div class="modal-image"></div>
 
                 <div class="modal-info">
                     <h2 id="titleProj"></h2>
@@ -109,7 +111,7 @@
                 </div>
             </div>
             <div class="picture_hero">
-                <img src="src/images/my_image.png" alt="my personal image" loading="lazy">
+                <img src="src/images/my_image.png" alt="my personal image" loading="eager">
             </div>
             <div class="scrooldown_line_hero">
                 <a href="https://wa.me//5518997179753" target="_blank"><img src="src/images/icon-whatsapp.png" alt="whatsapp's icon" class="icon_hero" title="whatsapp"></a>
@@ -294,10 +296,10 @@
                     <div class="dividing_line"></div>
 
                     <div class="redirect_socia_media">
-                        <a href="https://wa.me//5518997179753" target="_blank" class="whatsapp_direct"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100005813161603" target="_blank" class="facebook_direct"></a>
-                        <a href="https://www.linkedin.com/in/gabriel-silva-a2326022b/" target="_blank" class="linkedin_direct"></a>
-                        <a href="mailto:gabrielsilva.webdeveloper@gmail.com"  class="gmail_direct"></a>
+                        <a href="https://wa.me//5518997179753" target="_blank" class="whatsapp_direct" title="Meu Whatsapp"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100005813161603" target="_blank" class="facebook_direct" title="Meu Facebook"></a>
+                        <a href="https://www.linkedin.com/in/gabriel-silva-a2326022b/" target="_blank" class="linkedin_direct" title="Meu Linkedin"></a>
+                        <a href="mailto:gabrielsilva.webdeveloper@gmail.com"  class="gmail_direct" title="Meu Gmail"></a>
                     </div>
                 </div>
 
@@ -327,11 +329,11 @@
     </footer>
 
     <script type="text/javascript" src="src/javascript/svg/knowledges_svg.js"></script>
-    <script type="text/javascript" src="src/javascript/svg/ctt_informations_svg.js"></script>
-    <script type="text/javascript" src="src/javascript/svg/socialMedia_ctt_svg.js"></script>
-    <script type="text/javascript" src="src/javascript/svg/screen_mode_svg.js"></script>
-    <script type="text/javascript" src="src/javascript/project.js"></script>
-    <script type="text/javascript" src="src/javascript/copyToClipboard.js"></script>
+    <script type="text/javascript" async src="src/javascript/svg/ctt_informations_svg.js"></script>
+    <script type="text/javascript" async src="src/javascript/svg/socialMedia_ctt_svg.js"></script>
+    <script type="text/javascript" async src="src/javascript/svg/screen_mode_svg.js"></script>
+    <script type="text/javascript" async src="src/javascript/project.js"></script>
+    <script type="text/javascript" async src="src/javascript/copyToClipboard.js"></script>
     <script type="text/javascript" src="src/javascript/scroll.js"></script>
     <script type="text/javascript" src="src/javascript/responsiveMenu.js"></script>
     <script type="text/javascript" src="src/javascript/renderSkills.js"></script>

@@ -31,8 +31,8 @@ $(document).ready(function() {
     $("#descProj").text(projectData.description)
     $("#linkProj").text(projectData.site_link);
     $("#linkProj").attr("href", projectData.site_link);
-    $("#imgProj").attr("src", projectData.img_link);
-    $("#imgProj").attr("alt", projectData.title);
+
+    $(".modal-image").html(`<img id="imgProj" src='${projectData.img_link}' alt='${projectData.title}'>`);
   });
 });
 
