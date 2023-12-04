@@ -71,21 +71,13 @@
     width: 50px;
     height: 50px;
     border: 3px dotted var(--default_color);
-    /* animation: rotation_border 10s infinite linear; */
 }
-
-/* @keyframes rotation_border {
-    100%{
-        transform: rotateZ(300deg);
-    }
-} */
 
 .picture_hero{
     position: relative;
     margin-top: 66px;
     display: flex;
     align-content: flex-end;
-    /* border: 1px solid green;  */
 }
 
 .scrooldown_line_hero{
@@ -96,6 +88,7 @@
     margin-right: 0;
     padding-right: 5px;
     margin-top: 70px;
+    z-index: 4;
 }
 
 .icon_hero{
