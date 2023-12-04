@@ -76,17 +76,11 @@ body{
     align-items: center;
     justify-content: center;
     transition: .5s all;
+    color: var(--secondary_color);
 }
 
 .btn-d:hover{
     background-color: var(--default_color);
-}
-
-.btn-d .btn-unit-d{
-    background-color: transparent;
-    color: var(--secondary_color);
-    border: none;
-    cursor: pointer;
 }
 
 #cat {
