@@ -54,22 +54,26 @@
     position: relative;
 }
 
+.github_button_hero i{
+    font-size: 3.5rem;
+}
+
 .github_button_hero::after{
     content: '';
     width: 45px;
     height: 45px;
     border: 0px dotted var(--default_color);
-    border-radius: 30px;
+    border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .github_button_hero:hover::after{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border: 3px dotted var(--default_color);
 }
 
@@ -91,12 +95,18 @@
     z-index: 4;
 }
 
-.icon_hero{
-    width: 27px;
+.scrooldown_line_hero a i{
+    color: var(--secondary_color);
+    position: relative;
 }
 
-.icon_hero:hover{
-    border-radius: 5px;
+.scrooldown_line_hero a i:hover::after{
+    content: '|';
+    position: absolute;
+    color: var(--secondary_color);
+    font-weight: bold;
+    top: -20%;
+    right: -30%;
 }
 
 @media (max-width: 1074px) {

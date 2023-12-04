@@ -96,24 +96,24 @@
     align-items: center;
 }
 
-.redirect_socia_media svg{
+.redirect_socia_media i{
     color: var(--default_color);
     transition: .5s all;
 }
 
-.redirect_socia_media .whatsapp_direct svg:hover{
+.redirect_socia_media .whatsapp_direct i:hover{
     color: rgb(2, 190, 2);
 }
 
-.redirect_socia_media .facebook_direct svg:hover{
+.redirect_socia_media .facebook_direct i:hover{
     color: rgb(64, 30, 214);
 }
 
-.redirect_socia_media .linkedin_direct svg:hover{
+.redirect_socia_media .linkedin_direct i:hover{
     color: rgb(40, 115, 255);
 }
 
-.redirect_socia_media .gmail_direct svg:hover{
+.redirect_socia_media .gmail_direct i:hover{
     color: rgb(182, 7, 7);
 }
 
