@@ -34,9 +34,10 @@
   max-height: 47px;
 }
 
-button.photoshop {
+button.btn_disabled {
   border-color: rgb(141, 141, 141);
   color: rgb(141, 141, 141);
+  cursor: default;
 }
 
 .checkPortBTN {
