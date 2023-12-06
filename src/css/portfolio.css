@@ -34,7 +34,7 @@
   max-height: 47px;
 }
 
-button.btn_disabled {
+.btn_disabled {
   border-color: rgb(141, 141, 141);
   color: rgb(141, 141, 141);
   cursor: default;
@@ -65,6 +65,8 @@ button.btn_disabled {
   width: 335px;
   height: 250px;
   position: relative;
+  border: 2px solid var(--default_color);
+  border-radius: 8px;
 }
 
 .hoverProject {
@@ -152,6 +154,8 @@ button.btn_disabled {
   width: 100%;
   object-fit: cover;
   border-radius: .5rem;
+  border: 2px solid var(--default_color);
+  border-radius: 1rem;
 }
 
 .modal-info {
