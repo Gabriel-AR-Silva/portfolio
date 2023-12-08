@@ -79,7 +79,7 @@
     .paragraph_about_me{
         font-size: 15px;
         max-width: 642px;
-        height: 89px;
+        height: auto;
         margin: 15px 0 25px;
 
     }
@@ -167,15 +167,7 @@
         .small_title{
             font-size: 40px;
         }
-        .paragraph_about_me{
-            margin-bottom: 70px;
-        }
     } 
 
-    @media (max-width: 464px) {
-        .paragraph_about_me{
-            margin-bottom: 90px;
-        }
-    } 
 
 
