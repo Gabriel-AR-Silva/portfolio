@@ -56,12 +56,13 @@
 
 .github_button_hero i{
     font-size: 3.5rem;
+    color: var(--default_color);
 }
 
 .github_button_hero::after{
     content: '';
-    width: 45px;
-    height: 45px;
+    width: 49px;
+    height: 49px;
     border: 0px dotted var(--default_color);
     border-radius: 50%;
     position: absolute;
